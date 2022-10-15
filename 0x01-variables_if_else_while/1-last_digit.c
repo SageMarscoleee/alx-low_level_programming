@@ -1,13 +1,14 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /**
- * main - Print the last digit
- * Return: Always 0 (success)
+ * main - Entry
+ * Return: Always 0
  */
 int main(void)
 {
-	int n, m;
+	int n;
+	int m;
 	
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
