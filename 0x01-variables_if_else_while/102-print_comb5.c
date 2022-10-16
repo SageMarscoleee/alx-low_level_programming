@@ -1,47 +1,47 @@
 #include <stdio.h>
 
 /**
- * main - counts numbers digit
- *
+ * main - print out two digi numbers
  * Return: Always 0
  */
 int main(void)
 {
-	int a, b, c, d;
+	int a;
+	int b;
+	int c;
+	int d;
+	int ch1;
+	int ch2;
 
-	for (a = 48; a < 58; a++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		for (b = 48; b < 58; b++)
+		for (b = '0'; b <= '9'; b++)
 		{
-			for (c = 48; c < 58; c++)
+			for (c = '0'; c <= '9'; c++)
 			{
-				for (d = 48; d < 58; d++)
+				for (d = '0'; d <= '9'; d++)
 				{
-					if (c < a)
-						;
-					else if (((c == a) && (b >== d)))
-					{
-						;
-					}
-					else
+					ch1 = (a * 10) + b;
+					ch2 = (c * 10) + d;
+
+					if (ch1 < ch2)
 					{
 						putchar(a);
 						putchar(b);
-						putchar(32);
+						putchar(' ');
 						putchar(c);
 						putchar(d);
-						if ((a == 57) && (b == 56))
-							;
-						else
-						{
-							putchar(44);
-							putchar(32);
-						}
+
+						if (a == '9' && b == '8' && c == '9' && d == '9')
+							break;
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
 		}
 	}
-	putchar(10);
+	putchar('\n');
+
 	return (0);
 }
