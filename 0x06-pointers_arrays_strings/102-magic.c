@@ -10,8 +10,8 @@ int main(void)
 	p = &n;
 
 	/*
-	 * write your line of code here
-	 * you're not allowed to cod anything else
+	 * write line of code here
+	 * you are not allowed to write anything else
 	 */
 	*(p + 5) = 98;
 	printf("a[2] = %d\n", a[2]);
