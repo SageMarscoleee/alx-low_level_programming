@@ -15,6 +15,5 @@ head = head->next;
 
 if (n < index)
 return (NULL);
-
 return (head);
 }
